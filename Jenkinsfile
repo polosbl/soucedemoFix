@@ -19,7 +19,7 @@ pipeline {
             git branch: "${params.BRANCH}", url: 'https://github.com/polosbl/soucedemoFix.git'
 
             // Run Maven on a Unix agent.
-            sh "mvn clean test"
+            sh "mvn -Dtest=LoginTest test"
 
             // To run Maven on a Windows agent, use
             // bat "mvn clean test"
