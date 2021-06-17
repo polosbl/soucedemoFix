@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo Test Suite" parallel="tests" thread-count="10">
+    <!--<test name="CartTests">-->
+        <!--&lt;!&ndash;<groups>&ndash;&gt;-->
+            <!--&lt;!&ndash;<run>&ndash;&gt;-->
+                <!--&lt;!&ndash;<include name="slow" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</run>&ndash;&gt;-->
+        <!--&lt;!&ndash;</groups>&ndash;&gt;-->
+        <!--<classes>-->
+            <!--<class name="tests.CartTest" />-->
+        <!--</classes>-->
+    <!--</test> &lt;!&ndash; Test &ndash;&gt;-->
+    <!--<test name="ProductsTests">-->
+        <!--<classes>-->
+            <!--<class name="tests.ProductsTest" />-->
+        <!--</classes>-->
+    <!--</test> &lt;!&ndash; Test &ndash;&gt;-->
+    <test name="LoginTests">
+        <classes>
+            <class name="tests.LoginTest" />
+        </classes>
+    </test>
+</suite>
